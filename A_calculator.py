@@ -1,4 +1,7 @@
+
+
 def decimal_to_base32(decimal_number):
+"""these function convert given decimal value into base 32 value"""
   if decimal_number == 0:
       return '0'
   base32_chars = "0123456789ABCDEFGHIJKLMNOPQRSTUV"
@@ -10,6 +13,7 @@ def decimal_to_base32(decimal_number):
   return base32_str
 
 def decimal_to_base64(decimal_number):
+""" this function take a decimal value and return base 64 value"""
   if decimal_number == 0:
       return '0'
   base64_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
@@ -21,6 +25,7 @@ def decimal_to_base64(decimal_number):
   return base64_str
 
 def decimal_to_base24(decimal_number):
+""" this function take a decimal value and return the base 24 value"""
   if decimal_number == 0:
       return '0'
   base24_chars = "0123456789ABCDEFGHIJKLMN"
@@ -32,6 +37,7 @@ def decimal_to_base24(decimal_number):
   return base24_str
 
 def decimal_to_base14(decimal_number):
+""" this function take a decimal value and returns base 14 value"""
   if decimal_number == 0:
       return '0'
   base14_chars = "0123456789ABCD"
@@ -43,6 +49,7 @@ def decimal_to_base14(decimal_number):
   return base14_str
 
 def decimal_to_base12(decimal_number):
+""" this function takes a decimal value and Returns base 12 value"""
   if decimal_number == 0:
       return '0'
   base12_chars = "0123456789AB"
@@ -54,6 +61,7 @@ def decimal_to_base12(decimal_number):
   return base12_str
 
 def decimal_to_base16(decimal_number):
+""" this function takes a decimal value and return base 16 value"""
   if decimal_number == 0:
       return '0'
   base16_chars = "0123456789ABCDEF"
@@ -65,6 +73,8 @@ def decimal_to_base16(decimal_number):
   return base16_str
 
 def bcd(n,code):
+""" this function take 2 parameters first a decimal number and second code of number system to in which convert """
+
   if code == 0000:
     return n
   elif code == 1010:
