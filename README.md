@@ -1,9 +1,9 @@
-###Unique Calculator
+#Unique Calculator
 
 ##Overview
 The Unique Calculator is a versatile and comprehensive calculator capable of performing a wide range of arithmetic operations and numerical base conversions. It supports conversions between various numerical bases and offers a rich set of arithmetic functions, making it a valuable tool for both basic and advanced mathematical computations.
 
-##Features
+#Features
 
 #Base Conversion Functions:
 Convert decimal numbers to several bases, including binary, octal, hexadecimal, and less common bases such as quaternary, senary, duodecimal, etc.
@@ -38,7 +38,7 @@ Convert the number n to different bases depending on the provided code:
 bcd(n, code)
 
 
-##Arithmetic Functions
+#Arithmetic Functions
 Perform basic and advanced arithmetic operations:
 
 add(a, b)
@@ -52,7 +52,7 @@ fact(a)
 ncr(n, r)
 gcd(a, b)
 
-##Table and Square Table Functions
+#Table and Square Table Functions
 Print multiplication tables and squares of numbers:
 
 table(a, code, i=1)
@@ -76,35 +76,35 @@ duotrigesimal(code=3268)
 tetrasexagesimal(code=6486)
 
 
-##Main Execution Function
+#Main Execution Function
 Determine the base to work in and start the program:
 
 if_main_block()
 main()
 
 
-##How to Run
+#How to Run
 Clone the repository:
 
 |git clone https://github.com/Pras7616533/Unique_calculator.git
 
-##Navigate to the Python folder:
+#Navigate to the Python folder:
 
 |cd Unique_calculator/Python
 
-##Run the main script:
+#Run the main script:
 
 
 |python main.py
 
 Follow the on-screen instructions to select a base and perform operations.
 
-##Contributing
+#Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-##License
+#License
 This project is licensed under the MIT License.
 
-##Contact
+#Contact
 For any questions or suggestions, please contact Prashant Deshmukh at [prashdesh555@gmail.com].
 
