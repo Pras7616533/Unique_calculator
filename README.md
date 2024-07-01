@@ -102,6 +102,10 @@ Determine the base to work in and start the program:
 
 4. Follow the on-screen instructions to select a base and perform operations.
 
+## more information
+
+folder Bash and XHTML folders are the example that means you can rewrite this code into several languages
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
