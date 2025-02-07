@@ -1,5 +1,5 @@
 import main as ma
-
+import db
 
 # Arithmetic Functions
 def add(a, b):
@@ -16,7 +16,9 @@ def mul(a, b):
 
 def div(a, b):
     if b == 0:
-        raise ValueError("Division by zero is not allowed")
+        e = "Division by zero is not allowed"
+        db.fwrite(e)
+        raise ValueError(e)
     return a // b
 
 
@@ -57,18 +59,24 @@ def gcd(a, b):
 # Table and Square Table Functions
 def table(a, code, i=1):
     while i <= 10:
-        print(f"{ma.bcd(a, code)} × {ma.bcd(i, code)} = {ma.bcd(a * i, code)}")
+        r = f"{ma.bcd(a, code)} × {ma.bcd(i, code)} = {ma.bcd(a * i, code)}"
+        db.fwrite(r)
+        print(r)
         i += 1
 
 
 def square(a, code, i=1):
     while i <= a:
-        print(f"{ma.bcd(i, code)} × {ma.bcd(i, code)} = {ma.bcd(i * i, code)}")
+        r = f"{ma.bcd(i, code)} × {ma.bcd(i, code)} = {ma.bcd(i * i, code)}"
+        db.fwrite(r)
+        print(r)
         i += 1
 
 def cude(a, code, i=1):
     while i <= a:
-        print(f"{ma.bcd(i, code)} × {ma.bcd(i, code)} = {ma.bcd(i ** 3, code)}")
+        r = f"{ma.bcd(i, code)} × {ma.bcd(i, code)} = {ma.bcd(i ** 3, code)}"
+        db.fwrite(r)
+        print(r)
         i += 1
 
 
