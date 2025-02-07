@@ -57,6 +57,10 @@ These functions perform basic arithmetic operations:
 - `if_main_block()`: Determines the base to work in based on user input.
 - `main()`: Entry point of the script which starts the program.
 
+### Database Function
+- `fwrite(m)`: To write `m` data in `db.txt` file.
+- `fread()`: To read data in `db.txt` file.
+
 ### Usage
 When the script is run, it first prints the list of bases available for use. The user can then select a base, 
 and based on the selection, the corresponding function is called to handle further operations. The operations
