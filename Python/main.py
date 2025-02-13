@@ -6,13 +6,13 @@ def bcd(n, code):
     if code == 0000:
         return str(n)
     elif code == 1010:
-        return bin(n)[2:]
+        return base.decimal_to_base2(n)
     elif code == 1212:
-        return bin(n)[2:].zfill(4)
+        return base.decimal_to_base4(n)
     elif code == 1023:
-        return bin(n)[2:].zfill(6)
+        return base.decimal_to_base6(n)
     elif code == 1234:
-        return bin(n)[2:].zfill(8)
+        return base.decimal_to_base8(n)
     elif code == 1298:
         return base.decimal_to_base12(n)
     elif code == 1462:
@@ -74,9 +74,10 @@ def if_main_block():
     except ValueError:
         print("Invalid input. Please enter a numerical value.")
 
+def main():
+    print("\n\n\n\n\n")
+    print_main()
+    if_main_block()
 
 if __name__ == "__main__":
-    while True:
-        print("\n\n\n\n\n")
-        print_main()
-        if_main_block()
+    main()
